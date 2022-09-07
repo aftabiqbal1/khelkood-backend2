@@ -1,4 +1,4 @@
-class OtpsController < DeviseTokenAuth::OtpsController
+class OtpsController < ApplicationController
   include DeviseTokenAuth::Concerns::SetUserByToken
     #generates otp in otp table, when a user signup with mobile number
     def create
